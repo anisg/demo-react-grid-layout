@@ -2,7 +2,7 @@ demo app using react-grid-layout
 
 [live DEMO](https://anisg.github.io/demo-react-grid-layout/)
 
-![screenshot](./screenshot.png)
+![screenshot](./screenshot.gif)
 
 ## run the app
 
