@@ -1,0 +1,40 @@
+#empty for now
+
+enum TodoItemStatus {
+  active
+  completed
+}
+
+enum VisibilityFilter {
+  all
+  active
+  completed
+}
+
+type TodoItem {
+  id: ID!
+  content: String!
+  status: TodoItemStatus!
+  isLoading: Boolean!
+}
+
+extend type Mutation {
+  updateTodoItem(id: ID!, content: String, status: TodoItemStatus): Boolean!
+  removeTodoItem(id: ID!): TodoItem
+  clearCompletedItems: Boolean
+}
+
+type Block {
+  id: ID!
+  todos: [TodoItem!]!
+}
+
+extend type Mutation {
+  addBlock(id: ID!): Block
+  addTodoItem(blockId: ID!, content: String!): TodoItem!
+  removeBlock(id: ID!): Block
+}
+
+extend type Query {
+  blocks: [Block!]!
+}
