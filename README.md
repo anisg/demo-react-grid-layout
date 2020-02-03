@@ -1,4 +1,4 @@
-demo app using react-grid-layout
+demo app using [react-grid-layout](https://github.com/STRML/react-grid-layout)
 
 [live DEMO](https://anisg.github.io/demo-react-grid-layout/)
 
